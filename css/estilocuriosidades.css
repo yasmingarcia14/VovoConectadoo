@@ -1,0 +1,589 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*logo*/
+.logo img{
+    width: 130px;
+    height: 130px;
+}
+
+/*barra de pesquisa*/
+.searchbar {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    z-index: 3;
+    height: 50px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 600px;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.searchbar-wrapper {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+.searchbar-left {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.search-icon-wrapper {
+    margin: auto;
+}
+
+.search-icon {
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+}
+
+.searchbar-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.searchbar-center {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.searchbar-input-spacer {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+}
+
+.searchbar-input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    height: 40px;
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.searchbar-right {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row
+}
+
+.searchbar-clear-icon {
+    margin-right: 12px
+}
+
+.voice-search {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 2.8em;
+}
+
+/*menu*/
+button {
+    color: #2655ff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-size: 22px !important;
+}
+
+button::before {
+    margin-left: auto;
+}
+
+button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #836cff;
+    display: block;
+    transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu-button img{
+    width: 30px;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: rgba(65, 34, 207, 0.66);
+}
+
+.menu-button a:hover {
+    color: #1c44f3;
+}
+
+.menu-button {
+    font-size: 25px;
+    color: rgba(23, 96, 255, 0.66);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+}
+
+.menu-buttonn{
+    font-size: 30px;
+    color: rgba(151, 48, 255, 0.66);
+    font-family: bold;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/*curiosidades*/
+.conteudo-principal {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #6b21a8;
+  margin-bottom: 30px;
+}
+
+.jogos-container, .videos-container, .curiosidades-container,
+.atividades-container, .receitas-container, .musicas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.jogo-item, .video-item, .curiosidade-item,
+.atividade-item, .receita-item, .musica-item {
+  background-color: #e0e7ff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jogo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.video-item iframe, .musica-item iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.jogos a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+jogos a:hover {
+  text-decoration: none;
+}
+
+jogos p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #4b5563;
+}
+
+curiosidades h3 {
+  color: #3b82f6;
+  font-size: 2rem;
+}
+
+/* Jogos */
+.jogos {
+  background-color: #f0f8ff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.jogos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.jogo-item {
+  width: 280px;
+  text-align: center;
+}
+
+.jogo-box {
+  background-color: #a1c9f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.descricao-jogo {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.botao-jogo {
+  background-color: #6a4c9c;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.botao-jogo:hover {
+  background-color: #5b3b8e;
+}
+
+/* Receitas */
+.receitas {
+  background-color: #f0f9ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.receitas h2 {
+  color: #6b21a8;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.receitas-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.receita-item {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 18%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receita-item h3 {
+  color: #3b82f6;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.receita-item p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.botao-receita {
+  display: inline-block;
+  background-color: #6b21a8;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-receita:hover {
+  background-color: #5c1894;
+}
+
+/*Atividades*/
+.atividades {
+  background-color: #f9fafb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.atividades h2 {
+  color: #6b21a8;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.atividades-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.atividade-item {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 18%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.atividade-item h3 {
+  color: #3b82f6;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.atividade-item p {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.botao-atividade {
+  display: inline-block;
+  background-color: #6b21a8;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-atividade:hover {
+  background-color: #5c1894;
+}
+
+/*rodape*/
+footer {
+    background-color: rgba(11, 70, 197, 0.66);
+    color: #ffffff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+footer .me-2 {
+    margin-right: 8px;
+}
+
+/*botoesrodape*/
+.botoesrodape {
+    font-size: 20px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.botoesrodape:focus,
+.botoesrodape:hover {
+    color: #fff;
+}
+
+.botoesrodape:focus:after,
+.botoesrodape:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.botoesrodape:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/*redessociais*/
+.card-redesocial {
+    display: flex;
+    height: 70px;
+    width: 270px;
+}
+
+.card-redesocial svg {
+    width: 50%;
+    height: auto;
+    font-size: 24px;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card-redesocial .social-link1, .card-redesocial .social-link2, .card-redesocial .social-link3, .card-redesocial .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-redesocial .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link3:hover {
+    background-color: #3b5998;
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .receitas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .receita-item {
+    flex: 1 1 80%;
+  }
+
+  .atividades-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atividade-item {
+    flex: 1 1 80%;
+  }
+}

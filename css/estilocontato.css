@@ -1,0 +1,587 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*logo*/
+.logo img{
+    width: 130px;
+    height: 130px;
+}
+
+/*barra de pesquisa*/
+.searchbar {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    z-index: 3;
+    height: 50px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 600px;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.searchbar-wrapper {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+.searchbar-left {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.search-icon-wrapper {
+    margin: auto;
+}
+
+.search-icon {
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+}
+
+.searchbar-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.searchbar-center {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.searchbar-input-spacer {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+}
+
+.searchbar-input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    height: 40px;
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.searchbar-right {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row
+}
+
+.searchbar-clear-icon {
+    margin-right: 12px
+}
+
+.voice-search {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 2.8em;
+}
+
+/*menu*/
+button {
+    color: #2655ff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-size: 21px !important;
+}
+
+button::before {
+    margin-left: auto;
+}
+
+button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #836cff;
+    display: block;
+    transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu-button img{
+    width: 30px;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: rgba(65, 34, 207, 0.66);
+}
+
+.menu-button a:hover {
+    color: #1c44f3;
+}
+
+.menu-button {
+    font-size: 25px;
+    color: rgba(23, 96, 255, 0.66);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+}
+
+.menu-buttonn{
+    font-size: 30px;
+    color: rgba(151, 48, 255, 0.66);
+    font-family: bold;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/*formulario*/
+.container-separado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.formulario-bloco {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.formulario-bloco h2 {
+  font-size: 28px;
+  color: #5a189a;
+  margin-bottom: 20px;
+}
+
+.formulario-bloco form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-bloco label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario-bloco input,
+.formulario-bloco textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.buttonn {
+  background-color: #7b2cbf;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonn:hover {
+  background-color: #5a189a;
+}
+
+.contato-bloco {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.item-contato {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.mensagem-final {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mensagem-final h3 {
+  color: #5a189a;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mensagem-final p {
+  color: #7b2cbf;
+  font-size: 18px;
+}
+
+/*banner*/
+.banner-whatsapp {
+  background: linear-gradient(135deg, #7b2cbf, #3f37c9, #80ed99);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.conteudo-banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.conteudo-banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.botao-entrar {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-entrar:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
+/*rodape*/
+footer {
+    background-color: rgba(11, 70, 197, 0.66);
+    color: #ffffff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+footer .me-2 {
+    margin-right: 8px;
+}
+
+/*!*botoesrodape*!*/
+botoesrodape {
+    font-size: 20px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+botoesrodape:focus,
+botoesrodape:hover {
+    color: #fff;
+}
+
+botoesrodape:focus:after,
+botoesrodape:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+botoesrodape:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/*redessociais*/
+.card-redesocial {
+    display: flex;
+    height: 70px;
+    width: 270px;
+}
+
+.card-redesocial svg {
+    width: 50%;
+    height: auto;
+    font-size: 24px;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card-redesocial .social-link1, .card-redesocial .social-link2, .card-redesocial .social-link3, .card-redesocial .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-redesocial .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link3:hover {
+    background-color: #3b5998;  /* Facebook Blue */
+    animation: bounce_613 0.4s linear;
+}
+
+.card-redesocial .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+    /* Ajustar o tamanho do formulário */
+    .container-separado {
+        flex-direction: column;  /* Organiza o conteúdo em coluna */
+        gap: 20px;  /* Reduz o espaçamento entre os elementos */
+        padding: 15px;
+    }
+
+    .formulario-bloco {
+        width: 100%;  /* O formulário ocupa toda a largura disponível */
+        padding: 20px;  /* Reduz o padding para não ocupar tanto espaço */
+    }
+
+    .formulario-bloco h2 {
+        font-size: 24px;  /* Reduz o tamanho da fonte do título */
+        margin-bottom: 15px;
+    }
+
+    .formulario-bloco label {
+        font-size: 14px;  /* Ajusta o tamanho da fonte dos rótulos */
+    }
+
+    .formulario-bloco input,
+    .formulario-bloco textarea {
+        font-size: 14px;  /* Ajusta o tamanho da fonte dos inputs */
+        padding: 8px;  /* Reduz o padding para caber melhor em telas pequenas */
+    }
+
+    .buttonn {
+        font-size: 14px;  /* Ajusta o tamanho do botão */
+        padding: 10px;  /* Ajusta o padding do botão */
+    }
+}
+
+/* Responsivo para telas muito pequenas (como smartphones) */
+@media (max-width: 480px) {
+    .searchbar {
+        width: 100%;  /* Faz a barra de pesquisa ocupar toda a largura */
+        height: 45px;
+    }
+
+    .menu {
+        flex-direction: column;  /* Exibe os itens do menu em coluna */
+        gap: 10px;  /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    .menu-button {
+        font-size: 20px;  /* Reduz o tamanho da fonte do botão */
+    }
+
+    .grid-contato {
+        grid-template-columns: 1fr;  /* Faz os itens de contato se empilharem em uma coluna */
+    }
+
+    .banner-whatsapp {
+        padding: 40px 20px;  /* Ajusta o padding para caber melhor em telas pequenas */
+    }
+
+    .conteudo-banner h1 {
+        font-size: 28px;  /* Ajusta o tamanho da fonte do título do banner */
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;  /* Ajusta o tamanho da fonte da descrição */
+    }
+
+    .botao-entrar {
+        font-size: 16px;  /* Ajusta o tamanho do botão */
+        padding: 12px 25px;
+    }
+
+    footer {
+        padding: 0.5rem 0;
+    }
+
+    .card-redesocial .social-link1,
+    .card-redesocial .social-link2,
+    .card-redesocial .social-link3,
+    .card-redesocial .social-link4 {
+        width: 100%;  /* Faz cada ícone de rede social ocupar toda a largura disponível */
+        padding: 10px 0;  /* Adiciona um pouco de padding para espaçamento */
+    }
+}
+
